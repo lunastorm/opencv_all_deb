@@ -1,5 +1,6 @@
 Package: libopencv-all
 Version: $VERSION
+Depends: zlib1g, libavcodec53, libavformat53, libavutil51, libilmbase6, libjpeg8, libopenexr6, libpng12-0, libswscale2, libtiff4
 Section: base
 Priority: optional
 Architecture: amd64
