@@ -27,7 +27,6 @@ opencv: $(TARBALL_NAME)
 	tar -C opencv --strip-components=1 -jxvf $(TARBALL_NAME)
 	cd opencv ; cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=../$(ROOT)/$(DEST) . && make -j$(nproc) && make install
 	mkdir -p $(ROOT)/usr/local/include
-	mv $(ROOT)/$(DEST)/include/* $(ROOT)/usr/local/include
 
 $(TARBALL_NAME):
 	wget $(SOURCE_LINK)
